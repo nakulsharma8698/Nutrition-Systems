@@ -1,0 +1,70 @@
+.tool-q-wrapper {
+  width: 60%;
+  margin: auto;
+  .custom-slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .custom-slider-track {
+    max-width: 500px;
+  }
+  .page-title {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: #000;
+    padding-top: 70px;
+  }
+  .MuiInput-underline:before {
+    border-color: #f00;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 28px;
+  }
+  .sub-heading {
+    font-size: 20px;
+    color: #f00;
+  }
+  .tool-slide {
+    min-height: 400px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .button-wrapper {
+    button {
+      margin: 10px;
+    }
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    content: "" !important;
+  }
+  .slick-disabled {
+    .arrows {
+      opacity: 0;
+    }
+  }
+  .slick-prev {
+    left: 0px;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 0;
+    z-index: 1;
+  }
+  .arrows {
+    color: #c9c9c9;
+    font-size: 24px;
+  }
+}

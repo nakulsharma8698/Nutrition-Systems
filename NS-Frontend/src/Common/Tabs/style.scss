@@ -1,0 +1,24 @@
+@import "./../../scss/variables";
+.tabs {
+  padding: 16px;
+
+  .tab-list {
+    padding-left: 0;
+  }
+
+  .tab-list-item {
+    display: inline-block;
+    list-style: none;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: $red;
+    font-family: Poppins;
+    cursor: pointer;
+  }
+
+  .tab-list-item.active {
+    border-bottom: 2px solid $red;
+  }
+}

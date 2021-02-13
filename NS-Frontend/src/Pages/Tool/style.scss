@@ -1,0 +1,149 @@
+.tool-result-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  .table-overflow {
+    overflow: auto;
+  }
+  .title {
+    font-size: 32px;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .sub-heading {
+    font-size: 14px;
+    color: #dd121f;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .summary {
+    font-size: 14px;
+    color: #8b8b8b;
+    font-weight: 400;
+  }
+  .dietchart {
+    table,
+    tr,
+    td {
+      border: 1px solid black;
+      text-align: center;
+    }
+  }
+  .chart-wrapper {
+    display: flex;
+    padding: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    .left-side,
+    .right-side {
+      width: 50%;
+    }
+    .left-side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      .bmr {
+        line-height: 40px;
+        font-size: 40px;
+        color: #ff052b;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+      .category {
+        font-size: 24px;
+        color: #000000;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+  }
+  .recommended-products {
+    .product-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .product {
+      margin: 24px;
+      width: 247px;
+      height: 349px;
+      background-color: #ffffff;
+      padding: 8px;
+      .product-title {
+        font-size: 13px;
+        color: #000000;
+      }
+      .image-wrapper {
+        height: 185px;
+        text-align: center;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+  .workroutine {
+    table {
+      width: 100%;
+      td {
+        width: 50%;
+        color: #747374;
+        padding: 6px;
+      }
+    }
+    .odd {
+      background: white;
+    }
+    .even {
+      background: #eeeeee;
+    }
+  }
+  .tool-btns-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    margin: 10px;
+    .tool-btn {
+      color: #dd121f;
+      font-weight: 500;
+      text-align: center;
+      background-color: white;
+      border: 2px solid #dd121f;
+      margin-left: 24px;
+      padding: 0 12px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .tool-result-wrapper {
+    .title {
+      text-align: left;
+    }
+    .sub-heading {
+      text-align: left;
+    }
+    .tool-btns-wrapper {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      height: auto;
+      .tool-btn {
+        margin: 12px;
+        height: 50px;
+        padding: 0 8px;
+      }
+    }
+    .chart-wrapper {
+      flex-direction: column;
+      .left-side,
+      .right-side {
+        width: 100% !important;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

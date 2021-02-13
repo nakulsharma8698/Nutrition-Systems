@@ -1,0 +1,72 @@
+@import "./../../scss/variables";
+@import "./../../scss/functions";
+@import "./../../scss/mixins/common_mixins";
+
+.status-area {
+  background: #f2f2f2;
+  padding: 100px 0 175px;
+}
+
+.order-status-area {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 15px 15px 92px;
+  text-align: center;
+  > span {
+    display: block;
+    font-size: 37px;
+    line-height: 45px;
+    color: #000000;
+  }
+}
+
+.order-status-media {
+  margin-top: 30px;
+  > img {
+    display: block;
+    margin: auto;
+  }
+  .button-red {
+    font-size: 26px;
+    font-weight: $font-weight-bold;
+    min-width: 315px;
+    border-radius: 30px;
+    padding: 13px;
+    margin-top: -40px;
+    border: 2px solid $red;
+  }
+}
+
+@media (max-width: $desktopFirst-md) {
+  .status-area {
+    padding: 60px 0 95px;
+  }
+  .order-status-area {
+    > span {
+      font-size: 27px;
+      line-height: 35px;
+    }
+  }
+  .order-status-media {
+    .button-red {
+      font-size: 21px;
+      min-width: 275px;
+      padding: 12px;
+    }
+  }
+}
+
+@media (max-width: $desktopFirst-xs) {
+  .order-status-media {
+    .button-red {
+      font-size: 16px;
+      min-width: 225px;
+    }
+  }
+  .order-status-area {
+    > span {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}

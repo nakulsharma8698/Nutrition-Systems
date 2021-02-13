@@ -1,0 +1,66 @@
+.coupons-wrapper {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: #ffffff;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  padding: 16px;
+  margin: 40px;
+  .coupon-item {
+    background: white;
+    margin: 8px;
+    padding: 16px;
+    box-shadow: 0 0 4px rgba(40, 44, 63, 0.08);
+    border: 1px solid #eaeaec;
+    padding: 0% 2%;
+    margin-bottom: 10px;
+    color: #282c3f;
+    .left {
+      background: url(https://assets.myntassets.com/assets/images/2017/6/11/11497167746999-coupons.png)
+        no-repeat;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      width: 29%;
+      max-width: 100px;
+      color: #14cda8;
+      border-right: 1px solid #d4d5d9;
+      height: 70px;
+      background-position: -362px -380px;
+      border-right: 1px solid #d4d5d9;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      .coupon-amount {
+        color: #14cda8;
+      }
+    }
+    .right {
+      padding: 20px 0px 10px 10px;
+      display: inline-block;
+      width: 64%;
+    }
+    .bottom-section {
+      border-top: 1px solid #d4d5d9;
+      padding: 15px 0px;
+      .coupon-expiry-date {
+        font-weight: 500;
+        color: #696e79;
+        border-right: 1px solid #d4d5d9;
+        padding-right: 5px;
+      }
+      .coupon-details {
+        cursor: pointer;
+        float: right;
+        font-weight: 800;
+        color: #526cd0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .coupons-wrapper {
+    width: calc(100% - 40px);
+    margin: 20px;
+    padding: 8px;
+  }
+}

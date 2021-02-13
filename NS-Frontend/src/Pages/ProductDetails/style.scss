@@ -1,0 +1,698 @@
+@import "./../../scss/variables.scss";
+.product-details-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  background: #ebe9e9;
+  .product-info {
+    width: calc(100% - 364px - 40px);
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(221, 18, 31, 0.16);
+    display: flex;
+    padding: 24px;
+    margin-right: 40px;
+    flex-wrap: wrap;
+    .botom-section {
+      width: 100%;
+      display: flex;
+      height: 50px;
+      .icon {
+        color: #dd121f;
+        font-size: 24px;
+        margin-right: 14px;
+      }
+      .info-point {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid rgba(112, 112, 112, 0.15);
+        font-size: 12px;
+        line-height: 14px;
+        color: #000;
+        width: 25%;
+        justify-content: center;
+        padding: 10px;
+        &.order {
+          width: 35%;
+        }
+        &.last {
+          border: none;
+        }
+      }
+    }
+    .left {
+      width: 40%;
+    }
+   
+    .right {
+      width: 60%;
+      .title {
+        font-weight: bold;
+        font-size: 32px;
+        color: #292929;
+        line-height: 32px;
+      }
+      .seperator {
+        width: 50%;
+        height: 0px;
+        background: transparent;
+        border: 2px solid #dd121f;
+        margin: 12px 0;
+      }
+      .desc {
+        font-weight: normal;
+        font-size: 14px;
+        color: #292929;
+      }
+    }
+    .vendor {
+      font-weight: normal;
+      font-size: 14px;
+      color: #292929;
+      span {
+        color: $red;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .imageBox:hover .hoverImg {
+    display: block;
+  }
+  .imageBox {
+    position: relative;
+    float: left;
+  }
+  
+  .imageBox .hoverImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px;
+    display: none;
+  }
+  
+  .imageBox:hover .hoverImg {
+    display: inline-block;
+  }
+  .center{
+    font-size: 16px;
+    text-align: center;
+  }
+  .border-top{
+    border-top: 1px solid #eee;
+    padding: .5em 0 0;
+    margin: .5em .5em 0;
+  }
+  .buying-options-wrapper {
+    width: 364px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(221, 18, 31, 0.16);
+    padding: 12px;
+    .dropdown {
+      margin-bottom: 30px;
+    }
+    .stock-info {
+      font-weight: 500;
+      font-size: 16px;
+      text-align: left;
+      color: #1fcf54;
+      margin-top: 12px;
+    }
+    .dd-label {
+      font-size: 12px;
+      color: #888;
+    }
+    .heading {
+      background-color: $red;
+      color: white;
+      padding: 12px 12px 12px 20px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .product-final-offer {
+      display: flex;
+      align-items: center;
+      padding: 14px;
+      border-bottom: 1px solid rgba(112, 112, 112, 0.15);
+    }
+    .current-price {
+      font-weight: 500;
+      font-size: 35px;
+      color: #000;
+      line-height: 35px;
+    }
+    .original-price {
+      font-size: 13px;
+      text-align: left;
+      color: #7d7d7d;
+    }
+    .discount {
+      font-size: 15px;
+      color: $red;
+      border-color: $red;
+    }
+    
+    .btn-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+      button {
+        width: calc(50% - 10px);
+        height: 49px;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: left;
+        color: #000;
+        border: 2px solid $red;
+      }
+      .orange-button {
+        background-color:#f05300;
+        color: white;
+        text-align: center;
+        border:5px;
+        border-radius: 7px;
+        box-shadow: 5px black;
+        
+      }
+      
+
+    }
+    .raise:hover,
+    .raise:focus {
+      box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+      transform: translateY(-0.25em);
+    }
+    .buy-now {
+      margin-top: 12px;
+      height: 53px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 18px;
+      color: white;
+      border-radius: 7px;
+      background-color: #1a4f69;
+    }
+  }
+  .product-rating {
+    margin-top: 5px;
+    padding: 1px;
+    .rating{
+      padding: 0px 1px ;
+    }
+    .review-count{
+      padding: 0px 5px ;
+      font-size: 14px;
+    }
+    .change{
+      margin-left: 2px;
+    }
+    
+  }
+  .timer{
+    font-size: 18px;
+  }
+  .nutrition-info-wrapper {
+    width: 364px;
+    min-height: 200px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(221, 18, 31, 0.16);
+    padding: 12px;
+    margin-top: 20px;
+    .heading {
+      background-color: $red;
+      color: white;
+      padding: 12px 12px 12px 20px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .content {
+      padding: 12px;
+      font-size: 14px;
+      text-align: left;
+      color: #8b8b8b;
+    }
+  }
+  .today-deals-wrapper {
+    width: calc(100% - 364px - 40px);
+    min-height: 200px;
+    margin-right: 40px;
+  }
+  .slider-wrapper{
+    width: calc(100% - 364px - 40px);
+    padding: 12px;
+    min-height: 200px;
+    margin-right: 40px;
+    margin-top:20px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(221, 18, 31, 0.16);
+    .title {
+      height: 58px;
+      background: #df222e;
+      color: white;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 58px;
+      text-align: left;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .slider-item{
+      h3{
+          background: #df222e;
+          color: #fff;
+          font-size: 36px;
+          line-height: 100px;
+          margin: 10px;
+          padding: 2%;
+          position: relative;
+          text-align: center;
+      }
+
+      img{
+        height:100px;
+        line-height: 100px;
+        margin: 10px;
+        padding: 2%;
+        position: relative;
+        text-align: center;
+      }
+
+    } 
+  }
+  .deals-wrapper{
+    width: calc(100% - 364px - 40px);
+    padding: 12px;
+    margin-top: 20px;
+    min-height: 200px;
+    margin-right: 40px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(221, 18, 31, 0.16);
+    .title{
+      background: green;
+      color: white;
+      padding: 1%;
+      width: 15%;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 0px 0px 18px 0px;
+    }
+    .slider-item{
+      padding-left:15%;
+      img{
+        float:left;
+        margin-right: 10px;
+      }
+      .deal-info{
+        .deal-label{
+          margin:15px;
+          span{
+            border: 1px solid green;
+            color: green;
+            padding: 2%;
+          }
+        }
+        p{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .product-desc-wrapper {
+    width: calc(100% - 364px - 40px);
+    padding: 12px;
+    margin-top: 20px;
+    min-height: 200px;
+    margin-right: 40px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(221, 18, 31, 0.16);
+
+    .title {
+      height: 58px;
+      background: #474747;
+      font-weight: 500;
+      font-size: 24px;
+      text-align: left;
+      color: #fff;
+      line-height: 58px;
+      padding-left: 20px;
+    }
+  }
+  .rating-review-wrapper {
+    width: calc(100% - 364px - 40px);
+    min-height: 200px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(221, 18, 31, 0.16);
+    margin-top: 20px;
+    padding: 12px;
+    
+    .add-review {
+      margin-top: 10px;
+      margin-bottom:10px;
+      height: 50px;
+      font-weight: 500;
+      font-size: 14px;
+      color: white;
+      text-align: center;;
+      background-color: #df222e;
+      border-color: white;
+      text-transform: none;
+      padding: 0 10px;
+      width: 35%;
+
+      .fa-pencil{
+        font-size: 1.0rem;
+      }
+    }
+    .user-review {
+      float:left;
+      width:100%;
+      
+      padding: 24px;
+      border-bottom: 1px solid rgba(112, 112, 112, 0.15);
+      border-top: 1px solid rgba(112, 112, 112, 0.15);
+      .review-top {
+        float: left;
+        margin: 2%;
+        border: 1px solid #e5e5e5;
+        padding: 1% 7%;
+
+        .lagend{
+          margin-top: -1.2rem;
+          background: white;
+          padding: 2px;
+          text-align: center;
+        }
+        
+      }
+      .review-bottom {
+       float: left;
+        width:60%;
+        padding-right:0.5em;
+        border-right:1px solid #eee;
+        .child_rev{
+          float:left;
+          width:100%;
+          
+        }
+        .review-text {
+
+          font-size: 18px;
+          text-align: left;
+          color: #8b8b8b;
+          float:left;
+          float:left;
+          margin-bottom: 24px;
+          margin-left:1em;
+          
+          
+        }
+       
+      }
+      .user-image {
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        margin-right: 24px;
+      }
+      // .review-text {
+      //   font-size: 14px;
+      //   text-align: left;
+      //   color: #8b8b8b;
+      //   margin-top: 18px;
+      //   margin-bottom: 24px;
+      // }
+      .review-title {
+        font-weight: 500;
+        font-size: 18px;
+        float:left;
+        margin:1em;
+        width:100%;
+        text-align: left;
+        color: #000;
+      }
+      .username {
+        font-weight: bold;
+        font-size: 16px;
+        color: #303030;
+        margin-right: 20px;
+        min-width: 150px;
+      }
+      .date {
+        font-size: 12px;
+        color: #979797;
+      }
+      .stars {
+        display:inline-block;
+        text-align:center;
+      
+      }
+    }
+    .title {
+      height: 58px;
+      background: #df222e;
+      color: white;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 58px;
+      text-align: left;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      /* border-bottom: 1px solid rgba(112, 112, 112, 0.15); */
+    }
+    .rating-section {
+      width: 50%;
+      border-right: 1px solid rgba(112, 112, 112, 0.15);
+      padding: 50px;
+      text-align: center;
+      margin-right: auto;
+      
+      .heading {
+        font-weight: 300;
+        font-size: 24px;
+        color: #df222e;
+        margin-bottom: 12px;
+      }
+      .star-rating{
+        div{
+          display:inline-block;
+        }
+      }
+      .review-info {
+        color: #000;
+        border: 1px solid #eee;
+        margin: auto;
+        width: 85%;
+        padding: 10px;
+        .center{
+          font-size: 14px;
+          color:#666;
+          span{
+            color: #df222e;
+            font-size: 14px;
+            margin-right: 5px;
+            padding-top: 1px;
+          }
+        }
+        
+      }
+      .rating-info {
+        font-weight: 500;
+        font-size: 10px;
+        color: #8b8b8b;
+        margin: 0px 0px 14px 0;
+        display: inline-block;
+      }
+    }
+    .review-graph {
+      width: 50%;
+      padding: 50px;
+      max-width: 350px;
+      margin-left: auto;
+      text-align: center;
+      .heading {
+        font-weight: 300;
+        font-size: 24px;
+        color: #df222e;
+        margin-bottom: 12px;
+      }
+    }
+    .graph-item {
+      display: flex;
+      align-items: center;
+      .MuiLinearProgress-root {
+        background: #f0f0f0;
+        width: 100%;
+        margin: 0 8px;
+        padding: 8px 0px;
+      }
+      .MuiLinearProgress-barColorSecondary {
+        background: #dd121f;
+      }
+      .star-name {
+        white-space: nowrap;
+        font-size: 12px;
+        text-align: left;
+        color: #8b8b8b;
+        
+      }
+      .count {
+        font-size: 12px;
+        text-align: right;
+        color: #8b8b8b;
+      }
+    }
+  }
+  .india-flag {
+    width: 40px;
+    float: right;
+  }
+  .trending-wrapper {
+    width: 100%;
+  }
+
+  
+}
+.fieldset{
+  margin-left: 30px;
+}
+
+.top-rated-container{
+  text-align: center;
+  width: 100%;
+  .heading {
+    font-weight: 300;
+    font-size: 24px;
+    color: #df222e;
+    margin: 12px;
+  }
+  .top-rated-row{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  .top-rated-col-title{
+    float: left;
+    width: 50%;
+    text-align: initial;
+    padding-left: 9%;
+  }
+  .top-rated-col-value{
+    display: inline-grid;
+    padding-left: 5%;
+  }
+}
+.see-more{
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+  a{
+    text-decoration: none;
+    color:#666 !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product-details-wrapper {
+    .product-info {
+      width: 100%;
+      margin-right: 0;
+    }
+    .nutrition-info-wrapper {
+      width: 100%;
+    }
+    .today-deals-wrapper {
+      width: 100%;
+    }
+    .rating-review-wrapper {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 20px;
+    }
+    .product-desc-wrapper {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 20px;
+    }
+    .slider-wrapper{
+      width: 100%;
+      margin-right: 0px;
+      margin-top: 20px;
+    }
+    .deals-wrapper{
+      width: 100%;
+      margin-right: 0px;
+      margin-top: 20px;
+      .title{
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 15px;
+      }
+    }
+    .buying-options-wrapper {
+      width: 100%;
+      margin-top: 40px;
+      .maxwidth {
+        max-width: 360px;
+        margin: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-details-wrapper {
+    padding: 24px;
+    .product-info {
+      .right {
+        .title {
+          font-size: 24px;
+        }
+      }
+      .botom-section {
+        height: auto;
+        flex-wrap: wrap;
+        .info-point {
+          width: 50%;
+          min-width: 140px;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 568px) {
+  .product-details-wrapper {
+    .rating-review-wrapper {
+      .rating-section {
+        width: 100%;
+        padding: 20px;
+        border: none;
+      }
+      .review-graph {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+      }
+    }
+    .product-info {
+      .left,
+      .right {
+        width: 100%;
+      }
+      .left {
+        max-height: 200px;
+        text-align: center;
+        img {
+          max-height: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.address-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  .address-item {
+    width: calc(50% - 40px);
+    height: 339px;
+    border-radius: 7px;
+    filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 16px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+    position: relative;
+    max-width: 340px;
+    &.add {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .name {
+      border-bottom: 1px solid #707070;
+      margin-bottom: 12px;
+    }
+    .action {
+      position: absolute;
+      bottom: 30px;
+      span {
+        width: 100px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .seperator {
+        margin: 0 20px;
+        cursor: normal;
+      }
+    }
+  }
+}
+.add-edit-wrapper {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: #ffffff;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  padding: 16px;
+  margin: 40px;
+  .heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: #303030;
+    margin-bottom: 16px;
+  }
+  .form-wrapper {
+    border: 1px solid #ddd;
+    padding: 16px;
+    .name,
+    .mobile-number,
+    .pin,
+    .state,
+    .city,
+    .country {
+      width: 46%;
+      margin: 2%;
+    }
+    .address {
+      width: 96%;
+      margin: 2%;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .address-wrapper {
+    .address-item {
+      width: calc(100% - 40px);
+      margin: 20px auto;
+    }
+  }
+  .add-edit-wrapper {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    .heading {
+      font-size: 20px;
+    }
+    .form-wrapper {
+      padding: 8px;
+      .name,
+      .mobile-number,
+      .pin,
+      .state,
+      .city,
+      .country,
+      .address {
+        width: calc(100% - 8px);
+        margin: 4px;
+      }
+    }
+  }
+}

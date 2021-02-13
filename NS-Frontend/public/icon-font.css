@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "nutritionsystem";
+  src:url("fonts/nutritionsystem.eot");
+  src:url("fonts/nutritionsystem.eot?#iefix") format("embedded-opentype"),
+    url("fonts/nutritionsystem.woff") format("woff"),
+    url("fonts/nutritionsystem.ttf") format("truetype"),
+    url("fonts/nutritionsystem.svg#nutritionsystem") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "nutritionsystem" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "nutritionsystem" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-account-details-black:before {
+  content: "\61";
+}
+.icon-address-black:before {
+  content: "\62";
+}
+.icon-age:before {
+  content: "\63";
+}
+.icon-belly:before {
+  content: "\64";
+}
+.icon-cashback-history-black:before {
+  content: "\65";
+}
+.icon-coin-stack:before {
+  content: "\66";
+}
+.icon-couch:before {
+  content: "\67";
+}
+.icon-coupons-black:before {
+  content: "\68";
+}
+.icon-credit-card:before {
+  content: "\69";
+}
+.icon-delivery-truck:before {
+  content: "\6a";
+}
+.icon-fast:before {
+  content: "\6b";
+}
+.icon-gym:before {
+  content: "\6c";
+}
+.icon-gym-1:before {
+  content: "\6d";
+}
+.icon-workout:before {
+  content: "\6e";
+}
+.icon-heart:before {
+  content: "\6f";
+}
+.icon-weightlift:before {
+  content: "\70";
+}
+.icon-weight:before {
+  content: "\71";
+}
+.icon-walk:before {
+  content: "\72";
+}
+.icon-referrals-black:before {
+  content: "\73";
+}
+.icon-protein-powder:before {
+  content: "\74";
+}
+.icon-orders-black:before {
+  content: "\75";
+}
+.icon-home-black:before {
+  content: "\76";
+}
+.icon-height:before {
+  content: "\77";
+}
+.icon-gym-2:before {
+  content: "\79";
+}
+.icon-logout-white:before {
+  content: "\78";
+}
+.icon-shopping-cart-black:before {
+  content: "\7a";
+}

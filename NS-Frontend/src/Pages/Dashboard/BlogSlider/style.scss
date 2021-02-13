@@ -1,0 +1,89 @@
+.blog-slider-component {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  position: relative;
+  .view-more {
+    position: absolute;
+    right: 0;
+    border-radius: 0;
+  }
+  .heading {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #000;
+    text-align: center;
+    border-bottom: 2px solid rgba(112, 112, 112, 0.15);
+    padding-bottom: 8px;
+  }
+  .button-wrapper {
+    text-align: center;
+    margin: 20px 0;
+    .read-more {
+      height: 35px;
+      width: 190px;
+      font-weight: 500;
+      font-size: 12px;
+      border-radius: 0;
+    }
+  }
+  .max-width {
+    max-width: 350px;
+    margin: auto;
+  }
+  .blog-carousel {
+    padding: 30px;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #db0310;
+  }
+  .slick-dots {
+    button:before {
+      font-size: 12px;
+      color: #db0310;
+    }
+  }
+  .date {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    color: #808080;
+    padding-right: 18px;
+    border-right: 1px solid #808080;
+  }
+  .date-category {
+    margin-top: 12px;
+  }
+  .category {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    color: #db0310;
+    padding-left: 18px;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 21px;
+    text-align: center;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 8px 0;
+  }
+  .blog-summary {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #292929;
+  }
+}

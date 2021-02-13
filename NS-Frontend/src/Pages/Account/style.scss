@@ -1,0 +1,122 @@
+@import "./../../scss/variables.scss";
+.wishlist-wrapper {
+  .product-list-item {
+    transform: none;
+    .product-action {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.cashback-wrapper {
+  table,
+  tr,
+  td {
+    border: 1px solid #ddd;
+    white-space: nowrap;
+    padding: 4px;
+  }
+  table {
+    width: 80%;
+    margin: auto;
+  }
+  thead {
+    font-weight: bold;
+  }
+}
+
+.account-page-wrapper {
+  .page-title {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+  }
+
+  .account-page {
+    display: flex;
+    .left-side {
+      width: 315px;
+      border-right: 1px solid rgba(112, 112, 112, 0.15);
+      margin-bottom: 40px;
+      .menu {
+        display: flex;
+        align-items: center;
+        padding-left: 100px;
+        height: 40px;
+        cursor: pointer;
+        font-size: 16px;
+        color: #292929;
+        font-weight: 500;
+        margin: 14px 0;
+        &.logout {
+          margin: 60px 0;
+        }
+        &.active {
+          background-color: $red;
+          color: #ffffff;
+          filter: drop-shadow(0px 3px 4.5px rgba(255, 0, 0, 0.19));
+          &:hover {
+            color: #ffffff;
+          }
+        }
+        &:hover {
+          color: $red;
+        }
+        em {
+          font-size: 20px;
+          margin-right: 10px;
+          display: flex;
+        }
+      }
+    }
+    .right-side {
+      width: calc(100% - 315px);
+    }
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wishlist-wrapper {
+    width: 100%;
+    .product-list-item {
+      margin: 10px;
+    }
+  }
+
+  .cashback-wrapper {
+    width: calc(100% - 40px);
+    margin: 20px;
+    overflow: scroll;
+    table {
+      width: 100%;
+    }
+  }
+  .account-page-wrapper {
+    .page-title {
+      padding-left: 20px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    .mobile-menu {
+      display: block;
+      text-align: right;
+      padding-right: 16px;
+      padding-top: 16px;
+    }
+    .account-page {
+      flex-direction: column;
+
+      .left-side {
+        display: none;
+      }
+      .right-side {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+.stepper {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  .minus,
+  .plus {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    border: 1px solid #707070;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+  }
+  .value {
+    width: 50px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #707070;
+    text-align: center;
+    margin: 0 10px;
+    line-height: 32px;
+  }
+}
+
+.cart-wrapper {
+  margin: 60px;
+  .top-section {
+    display: flex;
+    align-items: flex-start;
+  }
+  .apply-coupon {
+    border-top: 1px solid #707070;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    .continue-btn,
+    .apply-btn {
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 500;
+      background-color: #dd121f;
+      border: 1px solid #dd121f;
+    }
+    .continue-btn {
+      margin-left: 12px;
+      background-color: #ffffff;
+      color: #dd121f;
+    }
+  }
+  .items-wrapper {
+    filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+    background-color: #ffffff;
+    border: 1px solid rgba(112, 112, 112, 0.3);
+    padding: 20px;
+    width: calc(100% - 320px);
+    .heading {
+      height: 40px;
+      font-size: 18px;
+      color: #000000;
+      font-weight: 600;
+      border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+    }
+    .item-wrapper {
+      display: flex;
+      padding: 12px;
+      align-items: center;
+      .product-image {
+        width: 140px;
+        height: 140px;
+        margin-right: 12px;
+      }
+      .product-title {
+        font-size: 18px;
+        color: #000000;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+      .current-price {
+        color: #000000;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .original-price {
+        color: #7d7d7d;
+        font-size: 12px;
+        text-decoration: line-through;
+        padding: 0 12px;
+      }
+      .discount {
+        color: #7ac430;
+        border: 2px solid #7ac430;
+        border-radius: 4px;
+        padding: 0 5px;
+      }
+      .rating {
+        margin-top: 8px;
+        display: flex;
+      }
+    }
+  }
+  .price-wrapper {
+    width: 300px;
+    margin-left: 20px;
+    filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+    background-color: #ffffff;
+    border: 1px solid rgba(112, 112, 112, 0.3);
+    padding: 20px;
+    font-size: 18px;
+    color: #292929;
+    font-weight: 400;
+    .heading {
+      height: 40px;
+      color: #000000;
+      font-weight: 600;
+      border-bottom: 1px solid #707070;
+    }
+    .subtotal,
+    .shipping,
+    .total {
+      display: flex;
+      justify-content: space-between;
+      height: 20px;
+      align-items: center;
+      height: 32px;
+    }
+    .total {
+      font-weight: 600;
+      border-top: 1px solid #707070;
+      border-bottom: 1px solid #707070;
+      height: 40px;
+      margin-bottom: 16px;
+      margin-top: 16px;
+    }
+    .place-order {
+      font-size: 14px;
+      color: #dd121f;
+      font-weight: 500;
+      background: white;
+      float: right;
+      border: 1px solid #dd121f;
+      padding: 8px;
+    }
+  }
+  .coupons-wrapper {
+    filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+    background-color: #ffffff;
+    border: 1px solid rgba(112, 112, 112, 0.3);
+    display: flex;
+    margin: 20px 0;
+    .offers {
+      border-left: 1px solid #707070;
+    }
+    .offers,
+    .coupons {
+      width: 50%;
+      padding: 12px;
+      .offer {
+        display: flex;
+        font-size: 18px;
+        color: #000000;
+        font-weight: 400;
+        a {
+          font-size: 11px;
+          color: #000000;
+        }
+        input {
+          margin-top: 5px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .title {
+      font-size: 23px;
+      color: #000000;
+      font-weight: 700;
+      height: 60px;
+    }
+  }
+}

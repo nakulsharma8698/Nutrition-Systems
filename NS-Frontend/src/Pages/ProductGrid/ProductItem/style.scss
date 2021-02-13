@@ -1,0 +1,212 @@
+@import "./../../../scss/variables";
+@import "./../../../scss/functions";
+@import "./../../../scss/mixins/common_mixins";
+
+.product-grid-area {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.product-item {
+  padding: 20px 12px;
+  position: relative;
+  margin-bottom: 35px;
+  margin: 20px;
+  width: calc(33% - 40px);
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0px 3px 8px rgba(221, 18, 31, 0.05);
+
+  @include transition(padding-bottom 300ms ease-in-out);
+  &:hover {
+    .product-overlay {
+      top: 0;
+    }
+  }
+  &.active {
+    box-shadow: 0px 3px 17px rgba(221, 18, 31, 0.3);
+    transform: scale(1.05);
+    z-index: 1;
+    &:hover {
+      .product-action {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .type-image {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 9px;
+  }
+  .product-action {
+    @include box-shadow(0px, 7px, 8px, 3px, rgba(221, 18, 31, 0.18));
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(opacity 300ms ease-in-out);
+    margin: 0 0 -53px;
+    background: #ffffff;
+    padding: 0px 12px 20px;
+    z-index: 10;
+  }
+
+  .action-group {
+    @include flexbox();
+    @include flex-flow(row nowrap);
+    @include align-items(center);
+    @include justify-content(flex-start);
+    > .btn {
+      border-radius: 0;
+      font-size: 13px;
+      font-weight: $font-weight-medium;
+      max-width: 115px;
+      width: 100%;
+    }
+    > .btn-cart {
+      border: 2px solid #dd121f;
+      margin-right: 8px;
+    }
+    > .btn-buy {
+      border: 2px solid #dd121f;
+    }
+  }
+}
+
+.product-media {
+  padding: 15px 8px 15px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  overflow: hidden;
+  > img {
+    height: 140px;
+  }
+}
+
+.product-content {
+  > span {
+    display: block;
+    &.limited-time-tag {
+      background: #dd1f21;
+      color: #ffffff;
+      font-size: 10px;
+      margin-bottom: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%;
+      > .fa {
+        padding-right: 8px;
+      }
+    }
+    &.product-title {
+      font-size: 13px;
+      color: #000000;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.product-final-offer {
+  margin-bottom: 15px;
+  > * {
+    margin-left: 10px;
+  }
+  .current-price {
+    color: #000000;
+    font-size: 15px;
+    font-weight: $font-weight-medium;
+  }
+  .original-price {
+    color: #7d7d7d;
+    font-size: 12px;
+  }
+  .discount {
+    color: #7ac430;
+    border: 2px solid #7ac430;
+    border-radius: 4px;
+    padding: 0 5px;
+  }
+}
+
+.product-rating {
+  @include flexbox();
+  @include flex-flow(row wrap);
+  @include align-items(center);
+  @include justify-content(flex-start);
+  .review-count {
+    color: #888888;
+    font-size: 11px;
+    padding-left: 7px;
+  }
+}
+
+.product-overlay {
+  color: #ffffff;
+  font-weight: $font-weight-medium;
+  font-size: 10px;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 40px 13px 12px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 100%;
+  text-align: left;
+  @include multi-transition(
+    bottom 300ms ease-in-out,
+    top 300ms ease-in-out,
+    left 300ms ease-in-out,
+    right 300ms ease-in-out
+  );
+  > h6 {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: $font-weight-medium;
+  }
+  > ul {
+    padding: 0 0 0 12px;
+    margin: 0;
+    @include flexbox();
+    @include flex-flow(row wrap);
+    > li {
+      @include flex(0 0 50%);
+      max-width: 50%;
+      width: 100%;
+      line-height: 18px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .product-item {
+    width: calc(50% - 40px);
+    .product-action {
+      box-shadow: none;
+      opacity: 1;
+      visibility: visible;
+      position: unset;
+      padding-top: 12px;
+      margin: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-item {
+    width: calc(50% - 40px);
+  }
+}
+@media screen and (max-width: 568px) {
+  .product-item {
+    width: calc(100% - 20px);
+    margin: 10px;
+    max-width: 400px;
+  }
+}

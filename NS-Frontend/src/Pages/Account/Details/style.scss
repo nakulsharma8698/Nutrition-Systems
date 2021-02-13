@@ -1,0 +1,72 @@
+.account-details-wrapper {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  padding: 16px;
+  margin: 40px;
+  .account-info {
+    display: flex;
+    flex-wrap: wrap;
+    .info {
+      flex: 1 0 50%;
+      padding: 8px;
+      max-width: 400px;
+      .label {
+        font-size: 14px;
+        color: #8b8b8b;
+        font-weight: 400;
+        padding-left: 6px;
+        padding-bottom: 4px;
+      }
+      input {
+        width: 80%;
+      }
+      .helptext {
+        width: 80%;
+        padding-top: 4px;
+        font-size: 12px;
+        color: #8b8b8b;
+        font-weight: 400;
+      }
+    }
+  }
+  .password-section {
+    .password-title {
+      font-size: 22px;
+      letter-spacing: 1px;
+      line-height: 15px;
+      color: #000000;
+      font-weight: 500;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(112, 112, 112, 0.15);
+      margin-bottom: 20px;
+    }
+    .info {
+      width: 50%;
+      .label {
+        font-size: 14px;
+        color: #8b8b8b;
+        font-weight: 400;
+        padding-left: 6px;
+        padding-bottom: 4px;
+      }
+      input {
+        width: 80%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .account-details-wrapper {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    .account-info {
+      .info {
+        flex: 1 0 100%;
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

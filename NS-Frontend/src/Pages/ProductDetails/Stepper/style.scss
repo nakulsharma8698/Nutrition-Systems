@@ -1,0 +1,28 @@
+.stepper-component {
+  width: 120px;
+  height: 38px;
+  border-radius: 3px;
+
+  .stepper-button {
+    width: 40px;
+    border-radius: 0px 3px 3px 0px;
+    background-color: #ccc;
+    opacity: 0.4;
+    color: #565656;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+
+    &:hover {
+      border-color: transparent;
+      background-color: #ccc;
+      border: 1px solid rgba(0, 0, 0, 0.23);
+    }
+
+    &.value-button {
+      font-size: 14px;
+      color: #e54d57;
+      background: #fff;
+      opacity: 1;
+    }
+  }
+}

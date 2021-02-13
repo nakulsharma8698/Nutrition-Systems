@@ -1,0 +1,129 @@
+$font-family-source: "Poppins", sans-serif !default;
+$font-weight-regular: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold: 600 !default;
+$font-weight-heavy-bold: 700 !default;
+
+$body-clr: #8b8b8b !default;
+$link-clr: #0052cc !default;
+$link-hover-clr: #dd121f !default;
+$body-bg: #ffffff !default;
+$header-bg: #ebebeb !default;
+$header-color: #000000 !default;
+$heading-one-size: 38px !default;
+$heading-two-size: 32px !default;
+$heading-three-size: 27px !default;
+$heading-four-size: 20px !default;
+$heading-five-size: 14px !default;
+$heading-six-size: 12px !default;
+$link-hover-bg: #f4f5f7 !default;
+$link-active-bg: #0052cc !default;
+$table-header-bg: #ecedf0 !default;
+$table-header-color: #505f79 !default;
+$table-sorting-icon-color: #505f79 !default;
+$expanded-table-header-bg: #f4f5f7 !default;
+$table-hover-row: #f4f5f7 !default;
+$table-row-active-color: #ebf2f9 !default;
+
+$form-input-color: #495057 !default;
+$form-input-height: 38px !default;
+$form-input-height-lg: 48px !default;
+$form-input-height-sm: 30px !default;
+$form-input-line-height: 38px !default;
+$form-input-line-height-lg: 48px !default;
+$form-input-line-height-sm: 30px !default;
+$form-placeholder-color: #e9ecef !default;
+$base-font-size: 14px !default;
+$large-font-size: 20px !default;
+$small-font-size: 12px !default;
+$base-line-height: 24px !default;
+
+$btn-color: #ffffff !default;
+$btn-link-color: #0052cc !default;
+$btn-warning-color: #212529 !default;
+$btn-light-color: #212529 !default;
+$btn-font-size-regular: 14px !default;
+$btn-line-height-regular: 24px !default;
+$btn-line-height-sm: 15px !default;
+$btn-line-height-lg: 28px !default;
+$btn-font-size-sm: 13px !default;
+$btn-font-size-lg: 16px !default;
+
+$btn-outline-bg: transparent !default;
+$btn-default-bg: #6c757d !default;
+$btn-primary-bg: #007bff !default;
+$btn-atlassian-bg: #0052cc !default;
+$btn-success-bg: #28a745 !default;
+$btn-danger-bg: #dc3545 !default;
+$btn-warning-bg: #ffc107 !default;
+$btn-info-bg: #17a2b8 !default;
+$btn-light-bg: #f8f9fa !default;
+$btn-dark-bg: #343a40 !default;
+
+$btn-default-border-color: #6c757d !default;
+$btn-atlassian-border-color: #0052cc !default;
+$btn-primary-border-color: #007bff !default;
+$btn-success-border-color: #28a745 !default;
+$btn-danger-border-color: #dc3545 !default;
+$btn-warning-border-color: #ffc107 !default;
+$btn-info-border-color: #17a2b8 !default;
+$btn-light-border-color: #f8f9fa !default;
+$btn-dark-border-color: #343a40 !default;
+
+$btn-default-hover-bg: #5a6268 !default;
+$btn-primary-hover-bg: #0069d9 !default;
+$btn-atlassian-hover-bg: #0065ff !default;
+$btn-success-hover-bg: #218838 !default;
+$btn-danger-hover-bg: #c82333 !default;
+$btn-warning-hover-bg: #e0a800 !default;
+$btn-info-hover-bg: #138496 !default;
+$btn-light-hover-bg: #e2e6ea !default;
+$btn-dark-hover-bg: #23272b !default;
+
+$btn-default-hover-border-color: #5a6268 !default;
+$btn-primary-hover-border-color: #0069d9 !default;
+$btn-atlassian-hover-border-color: #0065ff !default;
+$btn-success-hover-border-color: #218838 !default;
+$btn-danger-hover-border-color: #c82333 !default;
+$btn-warning-hover-border-color: #e0a800 !default;
+$btn-info-hover-border-color: #138496 !default;
+$btn-light-hover-border-color: #e2e6ea !default;
+$btn-dark-hover-border-color: #23272b !default;
+
+$btn-outline-default-color: #6c757d !default;
+$btn-outline-primary-color: #007bff !default;
+$btn-outline-success-color: #28a745 !default;
+$btn-outline-danger-color: #dc3545 !default;
+$btn-outline-warning-color: #ffc107 !default;
+$btn-outline-info-color: #17a2b8 !default;
+$btn-outline-light-color: #f8f9fa !default;
+$btn-outline-dark-color: #343a40 !default;
+
+$mobileFirst-lg: 1200px !default;
+$mobileFirst-md: 992px !default;
+$mobileFirst-sm: 768px !default;
+$mobileFirst-xsm: 576px !default;
+
+$desktopFirst-lg: 1199.98px !default;
+$desktopFirst-md: 991.98px !default;
+$desktopFirst-sm: 767.98px !default;
+$desktopFirst-xs: 575.98px !default;
+$desktopFirst-xxs: 478.98px !default;
+
+$container-ipad: 750px !default;
+$container-laptop: 970px !default;
+$container-desktop: 1170px !default;
+
+$col-twelve-width: 100% !default;
+$col-eleven-width: 91.66666667% !default;
+$col-ten-width: 83.33333333% !default;
+$col-nine-width: 75% !default;
+$col-eight-width: 66.66666667% !default;
+$col-seven-width: 58.33333333% !default;
+$col-six-width: 50% !default;
+$col-five-width: 41.66666667% !default;
+$col-four-width: 33.33333333% !default;
+$col-three-width: 25% !default;
+$col-two-width: 16.66666667% !default;
+$col-one-width: 8.33333333% !default;
+$red: #ff0919;
